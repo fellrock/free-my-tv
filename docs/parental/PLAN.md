@@ -219,10 +219,13 @@ This milestone is optional; it cannot be a prerequisite for core enforcement.
 ## Current handoff
 
 - M1 documents and upstream checks complete; all subsequent paths/commands are proposals.
-- SSAP registration/toast/soft standby have implementation evidence. No physical TV tested.
+- SSAP registration/toast/soft standby have implementation evidence; parental-control
+  capabilities have not been tested on the physical TV.
 - LG developer reference pages returned proxy 403; lifecycle/permission details and exact
   model's maintenance manual remain explicit verification tasks.
-- D1–D6 await review. Household timezone/model/year/firmware/network settings are unknown.
-- No TV contacted, no upstream code/instructions changed, no push/publication/deployment.
-- Next authorized task should be M2, followed by M3 simulator and separately authorized
-  hardware spike. Keep compatibility and offline-enforcement caveats visible.
+- D1–D6 await review. Household timezone and network/standby settings remain unknown.
+- The user reports a successful installation of the existing launcher on their LG OLED.
+  Planning and Windows helpers have been pushed to main; this does not validate enforcement.
+- The user plans to continue with a local Windows agent and work on the TV interface first.
+  See [LOCAL_HANDOFF.md](LOCAL_HANDOFF.md); begin the next requested modification there.
+  Parental M2/M3 and the hardware spike remain subsequent work, subject to user direction.

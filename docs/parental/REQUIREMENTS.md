@@ -5,7 +5,9 @@ Repository: https://github.com/fellrock/free-my-tv; inspected HEAD:
 `4d739516379976e4cc256e4106f3680d6bb94da8`.
 Read [ARCHITECTURE.md](ARCHITECTURE.md) for capability evidence and technical decisions,
 and [PLAN.md](PLAN.md) for milestones and validation. These documents are sufficient
-handoff context; implementation has not started and no physical TV has been tested.
+handoff context; parental-control implementation and its physical-TV tests have not started.
+The user has installed the existing LG launcher on a physical TV; that installation does
+not validate SSAP parental-control capabilities.
 
 ## Goal and scope
 
@@ -183,8 +185,8 @@ power for OLED maintenance; exact panel-cycle behavior requires model-specific v
 | D5 | Immediate policy enforcement and explicitly scoped, expiring overrides. | Determines whether a parent change interrupts current viewing. |
 | D6 | 90-day local history retention. | Household privacy/storage preference. |
 
-Approve these semantics before milestone 4 and real enforcement. Exact household timezone,
-TV model/year/firmware, wired/Wi-Fi connection and standby/Quick Start+/Always Ready settings
-must be collected for the physical test, never guessed. No credentials belong in review
+Approve these semantics before milestone 4 and real enforcement. The TV model and reported
+versions are in the local-agent handoff; household timezone, connection and standby/Quick
+Start+/Always Ready settings still need confirmation for the physical test. No credentials belong in review
 comments, public docs or Git. Foundation and simulator work can proceed after architecture
 review; uncertainty about real-TV capabilities must remain visible throughout.
